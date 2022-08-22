@@ -1,8 +1,5 @@
 # Axios Normalizer
-Normalizes axios responses
-
-## What is this for?
-Axios Normalizer is an utility library that works with the [Axios Library](https://axios-http.com/). It helps abstract the typical workflow done after receiving a response from an axios call.
+This is an utility library that works with the [Axios Library](https://axios-http.com/) to normalize response returned by the library. It helps abstract the typical workflow needed after receiving a response from an axios call. Axios wraps its responses around a `data` attribute of its response object. This is slightly different when an error response is received. The errors here might be a desirable response from the resource you are consuming. However axios treats the errors as an exception. This library helps flattens the two scenarios.
 
 ## How to use this
 Install via `npm install axios-normalizer --save` into your project.
